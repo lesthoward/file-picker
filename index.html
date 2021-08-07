@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <title>Custom File Upload</title>
+    <meta name="author" content="Lester Howard">
+    <meta name="description" content="Custom file picker that uses regular expressions to filter file texts and including an input hidden to throw the event and get real info">
+    <link rel="stylesheet" href="./file.css">
+    <script src="./file.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="container__title">Custom File Upload</h1>
+        <div class="file">
+            <input type="files" hidden class="file__picker"></input>
+            <div class="file__customfile">Chose a file</div>
+            <p class="file__customtext">No file chosen, yet</p>
+        </div>
+    </div>
+</body>
+</html>

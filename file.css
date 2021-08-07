@@ -1,0 +1,67 @@
+:root {
+    --background: #0e1e25;
+    --first-color: #009579;
+    --second-color: #00b28f;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+::selection {
+    background: var(--first-color);
+    color: #fff;
+}
+
+*, ::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background);
+    font-family: 'Poppins', arial;
+    font-size: 1.6rem;
+}
+
+.container {
+    background: rgba(255,255,255, .6);
+    max-width: 90%;
+    width: 40rem;
+    height: 40rem;
+    margin: 10rem auto;
+    border-radius: 1rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.container__title {
+    font-weight: 200;
+}
+
+.file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.file__customfile {
+    background: var(--first-color);
+    color: rgba(255,255,255, .6);;
+    padding: 1.5rem 4rem;
+    border-radius: .5rem;
+    border: .3rem solid rgba(0,0,0, .6);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.file__customfile:hover {
+    background: var(--second-color);
+}
+
+.file__customtext {
+    font-weight: 200;
+}
